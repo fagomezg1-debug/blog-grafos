@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Algoritmos de Recorrido: BFS y DFS</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+<header class="header">
+    <h1>Algoritmos BFS y DFS</h1>
+</header>
+
+<section class="content">
+
+<h2>BFS – Breadth First Search</h2>
+<p>Explora un grafo por niveles, usando una cola (queue).</p>
+
+<h3>Pseudocódigo</h3>
+<pre>
+BFS(G, inicio):
+    crear cola Q
+    marcar inicio como visitado
+    Q.encolar(inicio)
+
+    mientras Q no esté vacía:
+        nodo = Q.desencolar()
+        para cada vecino de nodo:
+            si no está visitado:
+                marcar visitado
+                Q.encolar(vecino)
+</pre>
+
+<h2>DFS – Depth First Search</h2>
+<p>Explora en profundidad usando una pila o recursión.</p>
+
+<h3>Pseudocódigo</h3>
+<pre>
+DFS(nodo):
+    marcar nodo como visitado
+    para cada vecino de nodo:
+        si no está visitado:
+            DFS(vecino)
+</pre>
+
+</section>
+
+<footer class="footer">© 2025 Blog Técnico</footer>
+</body>
+</html>

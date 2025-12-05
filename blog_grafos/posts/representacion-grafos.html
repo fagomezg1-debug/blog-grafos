@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Representación de Grafos</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+<header class="header">
+    <h1>Representación de Grafos</h1>
+</header>
+
+<section class="content">
+
+<h2>1. Lista de Adyacencia</h2>
+<p>Ideal para grafos dispersos. Se almacena cada nodo con una lista de sus vecinos.</p>
+
+<pre>
+A → B, D
+B → A, C, D
+C → B, E
+D → A, B, E
+E → C, D
+</pre>
+
+<h2>2. Matriz de Adyacencia</h2>
+<p>Una matriz NxN donde 1 indica conexión y 0 ausencia.</p>
+
+<pre>
+    A B C D E
+A [ 0 1 0 1 0 ]
+B [ 1 0 1 1 0 ]
+C [ 0 1 0 0 1 ]
+D [ 1 1 0 0 1 ]
+E [ 0 0 1 1 0 ]
+</pre>
+
+</section>
+
+<footer class="footer">© 2025 Blog Técnico</footer>
+</body>
+</html>
